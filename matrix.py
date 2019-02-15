@@ -43,13 +43,13 @@ def matrix_mult( m1, m2 ):
     for c in range(len(m2)):
         x = m2[c][0]
         y = m2[c][1]
-        x = m2[c][2]
+        z = m2[c][2]
         e = m2[c][3]
+        #print("x: " + str(x) + ", y: " + str(y) + ", z: " + str(z) + ", e: " + str(e))
         for r in range(4):
+            #print("add: " + str(y*m1[1][r]))
             m2[c][r] = x*m1[0][r] + y*m1[1][r] + z*m1[2][r] + e*m1[3][r]
-
-
-
+            #print("R= " + str(r) + ", m2[" + str(c) + "][" + str(r) + "]=" + str(m2[c][r]))
 
 
 def new_matrix(rows = 4, cols = 4):
