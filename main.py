@@ -3,7 +3,7 @@ from draw import *
 from matrix import *
 
 screen = new_screen()
-color = [185,146,67]
+color = [255,255,255]
 matrix = new_matrix()
 
 add_edge(matrix,63,0,0,63,107,0)
