@@ -4,7 +4,7 @@ from matrix import *
 
 screen = new_screen()
 color = [ 0, 255, 0 ]
-matrix = new_matrix(cols=12)
+matrix = new_matrix(cols=13)
 
 matrix[0] = [250,250,0,1]
 matrix[1] = [350,250,0,1]
@@ -18,6 +18,7 @@ matrix[8] = [150,100,0,1]
 matrix[9] = [250,75,0,1]
 matrix[10] = [250,75,0,1]
 matrix[11] = [350,75,0,1]
+matrix[12] = [350,75,0,1]
 print_matrix(matrix)
 
 #ident(matrix)
