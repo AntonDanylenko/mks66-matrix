@@ -21,6 +21,8 @@ def add_multi(matrix, coords):
         coords_list[i] = coords_list[i].split(",")
         for ii in range(len(coords_list[i])):
             coords_list[i][ii] = int(int(coords_list[i][ii])*900.0/500)
+            print(coords_list[i][ii] + " ")
+        print("\n")
     add_edge(matrix,coords_list[0][0],0,0,coords_list[0][0],coords_list[0][1],0)
     for i in range(len(coords_list)-1):
         add_edge(matrix,coords_list[i][0],coords_list[i][1],0,coords_list[i+1][0],coords_list[i+1][1],0)
