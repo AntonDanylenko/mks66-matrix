@@ -22,8 +22,8 @@ for c in range(len(matrix2)):
     matrix2[c][1] = matrix[c][1]
     matrix2[c][2] = matrix[c][2]
     matrix2[c][3] = matrix[c][3]
-    print("matrix[" + str(c) + "][0]: " + str(matrix[c][0]))
-    print("matrix2[" + str(c) + "][0]: " + str(matrix2[c][0]))
+    #print("matrix[" + str(c) + "][0]: " + str(matrix[c][0]))
+    #print("matrix2[" + str(c) + "][0]: " + str(matrix2[c][0]))
 
 matrix3 = new_matrix()
 add_multi(matrix3, "15,89 15,21 47,21 52,22 55,27 56,50 53,55 49,56 49,58 53,60 55,68 54,79 49,86 42,88 15,89", 500)
