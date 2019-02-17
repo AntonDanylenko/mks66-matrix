@@ -19,7 +19,7 @@ matrix2 = new_matrix()
 matrix2 = matrix
 for c in range(len(matrix2)):
     matrix2[c][0] = matrix2[c][0]+1
-    print("matrix1[" + str(c) + "][0]: " + str(matrix1[c][0]))
+    print("matrix[" + str(c) + "][0]: " + str(matrix[c][0]))
     print("matrix2[" + str(c) + "][0]: " + str(matrix2[c][0]))
 
 A = new_matrix()
