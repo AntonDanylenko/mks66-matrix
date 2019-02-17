@@ -33,3 +33,4 @@ transformation[3] = [0,0,0,1]
 
 draw_lines( matrix, screen, color )
 display(screen)
+save_extension(screen, 'img.png')
