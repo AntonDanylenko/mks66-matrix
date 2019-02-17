@@ -41,6 +41,13 @@ add_multi(matrix3, "369,88 369,20 399,20 399,34 387,34 387,49 398,49 398,63 387,
 add_multi(matrix3, "403,88 409,58 403,20 420,20 424,43 429,20 446,20 436,58 443,88 427,88 423,72 420,88 403,88", 500)
 add_multi(matrix3, "447,88 447,74 457,74 457,20 475,20 475,74 486,74 486,88 447,88", 500)
 
+matrix4 = new_matrix(cols=len(matrix3))
+for c in range(len(matrix4)):
+    matrix4[c][0] = matrix3[c][0]+1
+    matrix4[c][1] = matrix3[c][1]
+    matrix4[c][2] = matrix3[c][2]
+    matrix4[c][3] = matrix3[c][3]
+
 A = new_matrix()
 B = new_matrix()
 A[0] = [1,2,3,4]
@@ -64,5 +71,6 @@ print_matrix(A)
 draw_lines( matrix, screen, color )
 draw_lines( matrix2, screen, color )
 draw_lines( matrix3, screen, color2 )
+draw_lines( matrix4, screen, color2 )
 display(screen)
 save_extension(screen, 'img.png')
