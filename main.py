@@ -15,6 +15,11 @@ add_multi(matrix, "233,513 247,514 259,519 269,532 272,552 268,563 259,569 248,5
 add_multi(matrix, "451,466 470,468 490,473 503,487 509,499 494,520 474,530 463,532 456,524 451,511 447,498 446,488 449,477 452,467 437,469 427,475 419,486 420,496 425,511 436,522 447,529 463,532", 900)
 #print_matrix(matrix)
 
+matrix2 = new_matrix()
+matrix2.extend(matrix)
+for c in matrix2:
+    c[0] = c[0]+1
+
 A = new_matrix()
 B = new_matrix()
 A[0] = [1,2,3,4]
@@ -36,5 +41,6 @@ matrix_mult(B,A)
 print_matrix(A)
 
 draw_lines( matrix, screen, color )
+draw_lines( matrix2, screen, color )
 display(screen)
 save_extension(screen, 'img.png')
