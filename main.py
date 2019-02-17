@@ -15,10 +15,12 @@ add_multi(matrix, "233,513 247,514 259,519 269,532 272,552 268,563 259,569 248,5
 add_multi(matrix, "451,466 470,468 490,473 503,487 509,499 494,520 474,530 463,532 456,524 451,511 447,498 446,488 449,477 452,467 437,469 427,475 419,486 420,496 425,511 436,522 447,529 463,532", 900)
 #print_matrix(matrix)
 
-matrix2 = new_matrix()
-matrix2 = matrix
+matrix2 = new_matrix(cols=len(matrix))
 for c in range(len(matrix2)):
     matrix2[c][0] = matrix2[c][0]+1
+    matrix2[c][1] = matrix[c][1]
+    matrix2[c][2] = matrix[c][2]
+    matrix2[c][3] = matrix[c][3]
     print("matrix[" + str(c) + "][0]: " + str(matrix[c][0]))
     print("matrix2[" + str(c) + "][0]: " + str(matrix2[c][0]))
 
