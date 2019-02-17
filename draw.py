@@ -15,12 +15,12 @@ def add_edge( matrix, x0, y0, z0, x1, y1, z1 ):
 def add_point( matrix, x, y, z=0 ):
     matrix.append([x,y,z,1])
 
-def add_multi(matrix, coords):
+def add_multi(matrix, coords, size):
     coords_list = coords.split(" ")
     for i in range(len(coords_list)):
         coords_list[i] = coords_list[i].split(",")
         for ii in range(len(coords_list[i])):
-            coords_list[i][ii] = int(int(coords_list[i][ii])*500.0/900)
+            coords_list[i][ii] = int(int(coords_list[i][ii])*500.0/size)
             print(str(coords_list[i][ii]) + " ")
         print("\n")
     for i in range(len(coords_list)-1):
