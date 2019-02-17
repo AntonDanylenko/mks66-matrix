@@ -18,7 +18,7 @@ add_multi(matrix, "451,466 470,468 490,473 503,487 509,499 494,520 474,530 463,5
 matrix2 = new_matrix()
 matrix2.extend(matrix)
 for c in range(len(matrix2)):
-    print("matrix2[" + c + "][0]: " + str(matrix2[c][0]))
+    print("matrix2[" + str(c) + "][0]: " + str(matrix2[c][0]))
     matrix2[c][0] = matrix2[c][0]+1
 
 A = new_matrix()
